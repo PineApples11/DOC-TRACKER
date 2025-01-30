@@ -1,13 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './App.css'
 import PatientForm from './PatientForm'
+import Table from './Table';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [patients, setPatients] = useState([]);
+
+  
+  useEffect(() => {
+    fetch("http://localhost:3000/newpatients")
+      .then((r) => r.json())
+      .then((data) => setPatients(data));
+  }, []);
+
+  
+  const handleSubmit = (newPatient) => {
+    setPatients([...patients, newPatient]);
+  };
 
   return (
     <>
-   <PatientForm/>
+   <PatientForm onSubmit={handleSubmit}/>
+   <Table newPatient={patients}/>
+  
     </>
   )
 }

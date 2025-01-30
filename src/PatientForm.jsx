@@ -34,6 +34,8 @@ const newPatient ={
   firstName:firstName,
   lastName:lastName,
   weight:weight,
+  medical_history:[],
+  prescription:[],
 }
 
 fetch("http://localhost:3000/newpatients", {
