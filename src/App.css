@@ -47,7 +47,8 @@ max-width: 600px;
 border-radius: 30px;
 border: 1px solid white;
 color: orangered;
-
+position: relative;
+left: 0
 
 
 ;
