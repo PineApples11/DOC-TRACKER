@@ -1,14 +1,34 @@
 {
-        "doctors": [
-          {
-            "id": 1,
-            "name": "Dr. John Doe",
-            "password": "hashed_password" 
-          },
-          {
-            "id": 2,
-            "name": "Dr. Jane Smith",
-            "password": "hashed_password"
-          }
-]
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr. John Doe",
+      "password": "hashed_password"
+    },
+    {
+      "id": "2",
+      "name": "Dr. Jane Smith",
+      "password": "hashed_password"
+    },
+    {
+      "id": "e03f",
+      "firstName": "ivy",
+      "lastName": "wanjiru",
+      "weight": "65"
+    }
+  ],
+  "newpatients": [
+    {
+      "id": "39ac",
+      "firstName": "ivy",
+      "lastName": "wanjiru",
+      "weight": "65"
+    },
+    {
+      "id": "03f5",
+      "firstName": "Aidan",
+      "lastName": "Marube",
+      "weight": "85"
+    }
+  ]
 }
