@@ -40,3 +40,31 @@
 .read-the-docs {
   color: #888;
 }
+
+.patient-form { 
+padding: 20px ;
+max-width: 600px;
+border-radius: 30px;
+border: 1px solid white;
+color: orangered;
+
+
+
+;
+}
+ .patient-form form {
+   display: flex;
+   flex-direction: column;
+   padding: 6px;
+ }
+
+ .submit{
+  background-color: aliceblue;
+  color: black;
+  border-radius: 30px;
+  margin-top: 20px;
+ }
+
+ .hover :active{
+  background-color: red;
+ }
