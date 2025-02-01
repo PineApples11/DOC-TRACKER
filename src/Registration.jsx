@@ -7,10 +7,22 @@ const Registration = () => {
    const [name,setName] = useState("");
    const [password,setPassword] = useState("");
    const navigate = useNavigate();
-   
+
+   const isValidate = () => {
+        let isProceed = true;
+        let errormessage = " Please Entre Value";
+        if(name === ""){
+            isProceed = false;
+            errormessage = "Please Enter Name";
+        }
+        if (isProceed){
+              toast.warning(errormessage)
+        }}
     const handleSubmit = (e) => {e.preventDefault();
         let stateData = {name,password};//declairing an object 
         console.log(stateData);
+        if(isValidate()){
+        
 
         //fetching the data from the server
         fetch('http://localhost:3000/doctors',{
@@ -27,6 +39,7 @@ const Registration = () => {
         })
 
     }
+    }
 
     return (
     <div>
@@ -35,12 +48,12 @@ const Registration = () => {
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label>Name<span className="name-span"></span></label>
-                    <input required type="text" value = {name} onChange={e=>setName(e.target.value)} className="name-input"  placeholder="Enter your name" />
+                    <input type="text" value = {name} onChange={e=>setName(e.target.value)} className="name-input"  placeholder="Enter your name" />
                 </div>
         
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
-                    <input required type="password"  value = {password} onChange={e=>setPassword(e.target.value)} className="form-control" placeholder="Enter your password" />
+                    <input  type="password"  value = {password} onChange={e=>setPassword(e.target.value)} className="form-control" placeholder="Enter your password" />
                 </div>
                 <button type="submit" className="btn btn-primary">Register</button>
             </form>
