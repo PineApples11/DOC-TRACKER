@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
+import {useNavigate} from 'react-router-dom';
+
 const Registration = () => {
    //const [id,setId] = useState("");
    const [name,setName] = useState("");
    const [password,setPassword] = useState("");
+   const navigate = useNavigate();
    
     const handleSubmit = (e) => {e.preventDefault();
         let stateData = {name,password};//declairing an object 
@@ -17,6 +20,7 @@ const Registration = () => {
         }).then((res)=>{
             toast.success("New user added");
             console.log("new user added");
+            navigate('/login');
         }).catch((err)=>{
             toast.error("Failed :"+err.message);
 
@@ -31,12 +35,12 @@ const Registration = () => {
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label>Name<span className="name-span"></span></label>
-                    <input type="text" value = {name} onChange={e=>setName(e.target.value)} className="name-input"  placeholder="Enter your name" />
+                    <input required type="text" value = {name} onChange={e=>setName(e.target.value)} className="name-input"  placeholder="Enter your name" />
                 </div>
         
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
-                    <input type="password"  value = {password} onChange={e=>setPassword(e.target.value)} className="form-control" placeholder="Enter your password" />
+                    <input required type="password"  value = {password} onChange={e=>setPassword(e.target.value)} className="form-control" placeholder="Enter your password" />
                 </div>
                 <button type="submit" className="btn btn-primary">Register</button>
             </form>
