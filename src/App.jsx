@@ -1,18 +1,23 @@
 import React from "react";
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Registration from "./Registration";
+import Home from "./Home"
+import Login from "./Login"
+
 import { ToastContainer } from "react-toastify";
 const App = () => {
   return (
     <div>
-      <h1>Welcome to the Registration Page</h1>
-      <ToastContainer></ToastContainer>
+      
+      
       <BrowserRouter>
+      <h1>Welcome to the Registration Page</h1>
+      <ToastContainer/>
          <Routes>
 
           <Route path='/' element={<Home/>}> </Route>
-          <Route path='/login' element={<Registration/>}> </Route>
-          <Route path='/register' element={<Login/>}> </Route>
+          <Route path='/login' element={<Login/>}> </Route>
+          <Route path='/register' element={<Registration/>}> </Route>
 
          </Routes>
 
