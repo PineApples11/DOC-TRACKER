@@ -59,9 +59,9 @@ setWeight("");
     <div className='patient-form'>
       <h1>Patient Form </h1>
      <form onSubmit={handleSubmit}>
-      <input type="text" name="firstName" onChange={handleFirstNameChange} value={firstName} />
-      <input type="text" name="lastName" onChange={handleLastNameChange} value={lastName} />
-      <input type="text" name="weight" onChange={handleWeightChange} value={weight} />
+      <input type="text" name="firstName"  placeholder="First Name" onChange={handleFirstNameChange} value={firstName} />
+      <input type="text" name="lastName" placeholder=" Second Name"  onChange={handleLastNameChange} value={lastName} />
+      <input type="text" name="weight" placeholder="Weight" onChange={handleWeightChange} value={weight} />
       <button className='submit' type="submit">Submit</button>
      </form>
       
