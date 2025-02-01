@@ -1,17 +1,30 @@
+import { useState } from "react";
 const Registration = () => {
    //const [id,setId] = useState("");
    const [name,setName] = useState("");
    const [password,setPassword] = useState("");
    
     const handleSubmit = (e) => {e.preventDefault();
-        let data = {name,password};//declairing an object 
-        
+        let stateData = {name,password};//declairing an object 
+        console.log(stateData);
+
+        //fetching the data from the server
+        fetch('http://localhost:3000/doctors',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify(stateData)
+        }).then((res)=>{
+            console.log("new user added");
+        }).catch((err)=>{
+        })
+
+    }
 
     return (
     <div>
          
         <div className="registration-form">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label>Name<span className="name-span"></span></label>
                     <input type="text" value = {name} onChange={e=>setName(e.target.value)} className="name-input"  placeholder="Enter your name" />
