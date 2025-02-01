@@ -17,6 +17,7 @@
       "weight": "65"
     }
   ],
+  
   "newpatients": [
     {
       "id": "39ac",
@@ -38,14 +39,35 @@
       "medical_history": [],
       "prescription": []
     },
-    
     {
       "id": "c3b9",
       "firstName": "Elisha",
       "lastName": "Dominic",
       "weight": "100",
-      "medical_history": [],
-      "prescription": []
+      "medical_history": [
+        {
+          "Blood Type": " ",
+          "Medications": [],
+          "Allergies": [],
+          "Chronic illnesses ": [],
+          "Major surgeries": [],
+          "Health Insurance Provider": "",
+          "Next Kin": ""
+        }
+      ],
+      "prescription": [
+        {
+          "Date of Prescription": "",
+          "Diagnosis": "",
+          "Medications Prescribed": [
+            "Dosage",
+            "Frequency"
+          ],
+          "Additional Instructions": [],
+          "Doctor's Name": "",
+          "Hospital": ""
+        }
+      ]
     },
     {
       "id": "55a4",
@@ -63,5 +85,6 @@
       "medical_history": [],
       "prescription": []
     }
+   
   ]
 }

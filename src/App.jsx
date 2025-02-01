@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import './App.css'
-import PatientForm from './PatientForm'
-import Table from './Table';
+import PatientForm  from "./Components/PatientForm"
+import Table from "./Components/Table";
 
 
 function App() {
