@@ -1,14 +1,19 @@
 {
   "doctors": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Dr. Smith",
       "password": "securepass"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Dr. Jane",
       "password": "mypassword"
+    },
+    {
+      "id": "1692",
+      "name": "Bean",
+      "password": "qwer"
     }
   ]
 }

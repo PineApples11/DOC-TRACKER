@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 const Registration = () => {
    //const [id,setId] = useState("");
    const [name,setName] = useState("");
@@ -14,8 +15,11 @@ const Registration = () => {
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(stateData)
         }).then((res)=>{
+            toast.success("New user added");
             console.log("new user added");
         }).catch((err)=>{
+            toast.error("Failed :"+err.message);
+
         })
 
     }
