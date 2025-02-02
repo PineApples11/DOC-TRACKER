@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 import {useNavigate} from 'react-router-dom';
+import './App.css';
 
 const Registration = () => {
    //const [id,setId] = useState("");
@@ -53,28 +54,31 @@ const Registration = () => {
     }
 
     return (
-    <div>
-         
-        <div className="registration-form">
-        <h1>Welcome to the Registration Page</h1>
-
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label>Name<span className="name-span"></span></label>
-                    <input type="text" value = {name} onChange={e=>setName(e.target.value)} className="name-input"  placeholder="Enter your name" />
-                </div>
-        
-                <div className="form-group">
-                    <label className="password-span">Password</label>
-                    <input  type="password"  value = {password} onChange={e=>setPassword(e.target.value)} className="form-control" placeholder="Enter your password" />
-                </div>
-                <button type="submit" className="btn btn-primary">Register</button>
-            </form>
-
-        </div>
-        
+        <div className="form-container">
+        <h1>Register</h1>
+        <form onSubmit={handleSubmit}>
+            <div className="form-group">
+                <label>Name</label>
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
+            </div>
+            <div className="form-group">
+                <label>Password</label>
+                <input
+                    type="password"
+                    placeholder="Enter your password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+            </div>
+            <button type="submit">Register</button>
+            <button onClick={() => navigate("/login")}>Back to Login</button>
+        </form>
     </div>
-    )
-}
-
+);
+};
 export default Registration;

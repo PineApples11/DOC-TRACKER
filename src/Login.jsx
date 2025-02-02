@@ -2,18 +2,20 @@ import {useState,useEffect} from "react"
 import { Link } from 'react-router-dom';
 import { toast } from "react-toastify";
 import {useNavigate} from 'react-router-dom';
+import './App.css';
+
 
 
 const Login = () => {
-    const[name , setName] = useState("");
+    const[name , setName] = useState("");//setting state for name and password
     const[password , setPassword] = useState("");
     const navigate = useNavigate();
 
     useEffect(()=>{
-        sessionStorage.clear();
+        sessionStorage.clear();//clerning storage
             },[]);
 
-    const validate=()=>{
+    const validate=()=>{//making sure user puts correct input
         let result = true;
         if(name === ''){
             result = false;
@@ -60,27 +62,32 @@ const Login = () => {
 
 
     return (
-    <div>
-      <h1>Login here</h1>
-       <div>
-        <form onSubmit={ProceedLogin}> 
-            <div>
-                <label>username:</label>
-                <input onChange={(e)=> setName(e.target.value)} type="text" placeholder="Enter your username" name="username" required/>
-            </div>
-            <div>
-                <label>Password:</label>
-                <input onChange={(e)=> setPassword(e.target.value)} type="password" placeholder="Enter your password" name="password" required/>
-            </div>
-            <div>
+        <div className="form-container">
+            <h1>Login</h1>
+            <form onSubmit={ProceedLogin}>
+                <div className="form-group">
+                    <label>Username</label>
+                    <input
+                        type="text"
+                        placeholder="Enter your username"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                </div>
+                <div className="form-group">
+                    <label>Password</label>
+                    <input
+                        type="password"
+                        placeholder="Enter your password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </div>
                 <button type="submit">Login</button>
-                <Link to={'/register'}> New Doctor</Link>
-            </div>
-        </form>
-       </div>
-
-    </div>
-    )
-}
+                <Link to="/register" className="link">New Doctor? Register</Link>
+            </form>
+        </div>
+    );
+};
 
 export default Login;

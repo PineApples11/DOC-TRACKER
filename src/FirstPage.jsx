@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import './App.css';
+
 
 const FirstPage = () => {
     
     return (
-        <div>
+        <div className="First-page">
             <h3>Welcome</h3>
             <h1>DOC TRACKER</h1>
             <p>Please choose an option:</p>
