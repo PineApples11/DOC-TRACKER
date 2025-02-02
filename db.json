@@ -18,7 +18,83 @@
     }
   ],
   "newpatients": [
-
+    {
+      "medical_history": {
+        "bloodType": "",
+        "medications": [
+          "bdlk"
+        ],
+        "allergies": [
+          ""
+        ],
+        "chronicIllnesses": [
+          ""
+        ],
+        "majorSurgeries": [
+          ""
+        ],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "jbjka",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          ""
+        ],
+        "doctorsName": "",
+        "hospital": ""
+      },
+      "id": "39ac"
+    },
+    {
+      "id": "03f5",
+      "firstName": "Aidan",
+      "lastName": "Marube",
+      "weight": "85"
+    },
+    {
+      "id": "5803",
+      "firstName": "ivy",
+      "lastName": "wanjiru",
+      "weight": "65",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "c3b9",
+      "firstName": "Elisha",
+      "lastName": "Dominic",
+      "weight": "100",
+      "medical_history": [
+        {
+          "Blood Type": " ",
+          "Medications": [],
+          "Allergies": [],
+          "Chronic illnesses ": [],
+          "Major surgeries": [],
+          "Health Insurance Provider": "",
+          "Next Kin": ""
+        }
+      ],
+      "prescription": [
+        {
+          "Date of Prescription": "",
+          "Diagnosis": "",
+          "Medications Prescribed": [
+            "Dosage",
+            "Frequency"
+          ],
+          "Additional Instructions": [],
+          "Doctor's Name": "",
+          "Hospital": ""
+        }
+      ]
+    },
     {
       "id": "55a4",
       "firstName": "devy",
@@ -36,43 +112,70 @@
       "prescription": []
     },
     {
-      "id": "f643",
-      "firstName": "ivy",
-      "lastName": "wanjiru",
-      "weight": "65",
-      "medical_history": [],
-      "prescription": []
+      "medical_history": {
+        "bloodType": "",
+        "medications": [
+          ""
+        ],
+        "allergies": [
+          ""
+        ],
+        "chronicIllnesses": [
+          ""
+        ],
+        "majorSurgeries": [
+          ""
+        ],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          ""
+        ],
+        "doctorsName": "",
+        "hospital": ""
+      },
+      "id": "270c"
     },
     {
-      "id": "c3eb",
-      "firstName": "ivy",
-      "lastName": "wanjiru",
-      "weight": "65",
-      "medical_history": [],
-      "prescription": []
-    },
-    {
-      "id": "7014",
-      "firstName": "ivy",
-      "lastName": "wanjiru",
-      "weight": "65",
-      "medical_history": [],
-      "prescription": []
-    },
-    {
-      "id": "a46b",
-      "firstName": "ivy",
-      "lastName": "wanjiru",
-      "weight": "65",
-      "medical_history": [],
-      "prescription": []
-    },
-    {
-      "id": "ff9a",
-      "firstName": "devy",
-      "lastName": "jamal",
-      "weight": "20"
+      "medical_history": {
+        "bloodType": "A",
+        "medications": [
+          "aspirin"
+        ],
+        "allergies": [
+          "smart people"
+        ],
+        "chronicIllnesses": [
+          "dumbness"
+        ],
+        "majorSurgeries": [
+          "brain"
+        ],
+        "healthInsuranceProvider": "none",
+        "nextOfKin": "ivy"
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          ""
+        ],
+        "doctorsName": "",
+        "hospital": ""
+      },
+      "id": "e9f0"
     }
-  
   ]
 }

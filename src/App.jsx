@@ -4,6 +4,7 @@ import PatientForm from "./Components/PatientForm";
 import Table from "./Components/Table";
 import PatientDetails from "./Components/Pages.jsx/PatientDetails";
 import PatientDetailsForm from "./Components/Pages.jsx/PatientDetailsForm"
+import "./App.css"
 
 function App() {
   const [patients, setPatients] = useState([]);
