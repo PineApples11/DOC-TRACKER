@@ -1,0 +1,178 @@
+[21:45, 2/2/2025] Pineapple: {
+    "doctors": [
+      {
+  <<<<<<< Ivy's-Branch
+        "id": "1",
+        "name": "Dr. John Doe",
+        "password": "hashed_password"
+      },
+      {
+        "id": "2",
+        "name": "Dr. Jane Smith",
+        "password": "hashed_password"
+      },
+      {
+        "id": "e03f",
+        "firstName": "ivy",
+        "lastName": "wanjiru",
+        "weight": "65"
+      }
+    ],
+    
+    "newpatients": [
+      {
+        "id": "39ac",
+        "firstName": "ivy",
+        "lastName": "wanjiru",
+        "weight": "65"
+      },
+      {
+        "id": "03f5",
+        "firstName": "Aidan",
+        "lastName": "Marube",
+        "weight": "85"
+      },
+      {
+        "id": "5803",
+        "firstName": "ivy",
+        "lastName": "wanjiru",
+        "weight": "65",
+        "medical_history": [],
+        "prescription": []
+      },
+      {
+        "id": …
+  [21:46, 2/2/2025] Pineapple: <<<<<<< Ivy's-Branch
+  
+  
+  {
+    "doctors": [
+      {
+        "id": "1",
+        "name": "Dr. John Doe",
+        "password": "hashed_password"
+      },
+      {
+        "id": "2",
+        "name": "Dr. Jane Smith",
+        "password": "hashed_password"
+      },
+      {
+        "id": "e03f",
+        "firstName": "ivy",
+        "lastName": "wanjiru",
+        "weight": "65"
+      }
+    ],
+    
+    "newpatients": [
+      {
+        "id": "39ac",
+        "firstName": "ivy",
+        "lastName": "wanjiru",
+        "weight": "65"
+      },
+      {
+        "id": "03f5",
+        "firstName": "Aidan",
+        "lastName": "Marube",
+        "weight": "85"
+      },
+      {
+        "id": "5803",
+        "firstName": "ivy",
+        "lastName": "wanjiru",
+        "weight": "65",
+        "medical_history": [],
+        "prescription": []
+      },
+      {
+        "id": "c3b9",
+        "firstName": "Elisha",
+        "lastName": "Dominic",
+        "weight": "100",
+        "medical_history": [
+          {
+            "Blood Type": " ",
+            "Medications": [],
+            "Allergies": [],
+            "Chronic illnesses ": [],
+            "Major surgeries": [],
+            "Health Insurance Provider": "",
+            "Next Kin": ""
+          }
+        ],
+        "prescription": [
+          {
+            "Date of Prescription": "",
+            "Diagnosis": "",
+            "Medications Prescribed": [
+              "Dosage",
+              "Frequency"
+            ],
+            "Additional Instructions": [],
+            "Doctor's Name": "",
+            "Hospital": ""
+          }
+        ]
+      },
+      {
+        "id": "55a4",
+        "firstName": "devy",
+        "lastName": "Jamal",
+        "weight": "25",
+        "medical_history": [],
+        "prescription": []
+      },
+      {
+        "id": "d984",
+        "firstName": "mal",
+        "lastName": "cyan",
+        "weight": "75",
+        "medical_history": [],
+        "prescription": []
+      }
+     
+  =======
+        "id": "5383",
+        "name": "Mr Krabs",
+        "password": "bikini bottom"
+      },
+      {
+        "id": "d9b0",
+        "name": "qwe",
+        "password": "1234q"
+      },
+      {
+        "id": "a956",
+        "name": "qwe",
+        "password": "123q"
+      },
+      {
+        "id": "e63a",
+        "name": "eli",
+        "password": "dom"
+      },
+      {
+        "id": "220e",
+        "name": "wewe",
+        "password": "ruru"
+      },
+      {
+        "id": "c5b3",
+        "name": "WEWE",
+        "password": "RURU"
+      },
+      {
+        "id": "ee89",
+        "name": "DR.ELI",
+        "password": "DOMI"
+      },
+      {
+        "id": "839f",
+        "name": "Ed",
+        "password": "elisha"
+      }
+  >>>>>>> Elisha
+    ]
+  }
