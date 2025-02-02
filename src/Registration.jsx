@@ -10,20 +10,31 @@ const Registration = () => {
 
    const isValidate = () => {
         let isProceed = true;
-        let errormessage = " Please Entre Value";
+        let errormessage = " Please Entre : ";
+        let missingFields = [];
+
         if(name === ""){
             isProceed = false;
-            errormessage = "Please Enter Name";
+            errormessage += 'name';
+
         }
-        if (isProceed){
-              toast.warning(errormessage)
-        }}
+        if (password === ""){
+            isProceed = false;
+            errormessage += 'password';
+        }
+        if (!isProceed){
+              toast.warning(errormessage + missingFields.join(" ,"));  
+        }         return isProceed;
+    }
     const handleSubmit = (e) => {e.preventDefault();
+    if(!isValidate()) return;
         let stateData = {name,password};//declairing an object 
+
         console.log(stateData);
-        if(isValidate()){
         
 
+
+        
         //fetching the data from the server
         fetch('http://localhost:3000/doctors',{
             method:'POST',
@@ -38,13 +49,15 @@ const Registration = () => {
 
         })
 
-    }
+    
     }
 
     return (
     <div>
          
         <div className="registration-form">
+        <h1>Welcome to the Registration Page</h1>
+
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label>Name<span className="name-span"></span></label>
@@ -52,7 +65,7 @@ const Registration = () => {
                 </div>
         
                 <div className="form-group">
-                    <label htmlFor="password">Password</label>
+                    <label className="password-span">Password</label>
                     <input  type="password"  value = {password} onChange={e=>setPassword(e.target.value)} className="form-control" placeholder="Enter your password" />
                 </div>
                 <button type="submit" className="btn btn-primary">Register</button>
