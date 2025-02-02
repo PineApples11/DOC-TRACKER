@@ -17,58 +17,8 @@
       "weight": "65"
     }
   ],
-  
   "newpatients": [
-    {
-      "id": "39ac",
-      "firstName": "ivy",
-      "lastName": "wanjiru",
-      "weight": "65"
-    },
-    {
-      "id": "03f5",
-      "firstName": "Aidan",
-      "lastName": "Marube",
-      "weight": "85"
-    },
-    {
-      "id": "5803",
-      "firstName": "ivy",
-      "lastName": "wanjiru",
-      "weight": "65",
-      "medical_history": [],
-      "prescription": []
-    },
-    {
-      "id": "c3b9",
-      "firstName": "Elisha",
-      "lastName": "Dominic",
-      "weight": "100",
-      "medical_history": [
-        {
-          "Blood Type": " ",
-          "Medications": [],
-          "Allergies": [],
-          "Chronic illnesses ": [],
-          "Major surgeries": [],
-          "Health Insurance Provider": "",
-          "Next Kin": ""
-        }
-      ],
-      "prescription": [
-        {
-          "Date of Prescription": "",
-          "Diagnosis": "",
-          "Medications Prescribed": [
-            "Dosage",
-            "Frequency"
-          ],
-          "Additional Instructions": [],
-          "Doctor's Name": "",
-          "Hospital": ""
-        }
-      ]
-    },
+
     {
       "id": "55a4",
       "firstName": "devy",
@@ -84,7 +34,45 @@
       "weight": "75",
       "medical_history": [],
       "prescription": []
+    },
+    {
+      "id": "f643",
+      "firstName": "ivy",
+      "lastName": "wanjiru",
+      "weight": "65",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "c3eb",
+      "firstName": "ivy",
+      "lastName": "wanjiru",
+      "weight": "65",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "7014",
+      "firstName": "ivy",
+      "lastName": "wanjiru",
+      "weight": "65",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "a46b",
+      "firstName": "ivy",
+      "lastName": "wanjiru",
+      "weight": "65",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "ff9a",
+      "firstName": "devy",
+      "lastName": "jamal",
+      "weight": "20"
     }
-   
+  
   ]
 }
