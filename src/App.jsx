@@ -1,4 +1,8 @@
-import React from "react";
+
+import React, { useState,useEffect } from 'react'
+import './App.css'
+import PatientForm  from "./Components/PatientForm"
+import Table from "./Components/Table";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Registration from "./Registration";
 import Home from "./Home";
@@ -6,9 +10,25 @@ import Login from "./Login";
 import FirstPage from "./FirstPage"; // Import Landing Page
 import { ToastContainer } from "react-toastify";
 
-const App = () => {
-    return (
-        <div>
+
+function App() {
+  const [patients, setPatients] = useState([]);
+
+  
+  useEffect(() => {
+    fetch("http://localhost:3000/newpatients")
+      .then((r) => r.json())
+      .then((data) => setPatients(data));
+  }, []);
+
+  
+  const handleSubmit = (newPatient) => {
+    setPatients([...patients, newPatient]);
+  };
+
+  return (
+    <>
+    
             <BrowserRouter>
                 <ToastContainer />
                 <Routes>
@@ -18,8 +38,12 @@ const App = () => {
                     <Route path="/home" element={<Home />} /> {/* After Login */}
                 </Routes>
             </BrowserRouter>
-        </div>
-    );
-};
+        
+   <PatientForm onSubmit={handleSubmit}/>
+   <Table newPatient={patients}/>
+  
+    </>
+  )
+}
 
-export default App;
+export default App
