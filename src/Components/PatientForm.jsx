@@ -72,11 +72,13 @@
 // export default PatientForm
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function PatientForm({ onSubmit }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [weight, setWeight] = useState("");
+  const navigate = useNavigate();
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -104,6 +106,7 @@ function PatientForm({ onSubmit }) {
     setFirstName("");
     setLastName("");
     setWeight("");
+    navigate("/table");
   }
 
   return (

@@ -20,6 +20,11 @@
       "id": "d6f4",
       "name": "Elisha",
       "password": "KK"
+    },
+    {
+      "id": "1ce1",
+      "name": "Eli",
+      "password": "KKK"
     }
   ],
   "newpatients": [
@@ -181,6 +186,46 @@
         "hospital": ""
       },
       "id": "e9f0"
+    },
+    {
+      "id": "389c",
+      "firstName": "Samaki",
+      "lastName": "Mkubwa",
+      "weight": "80",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "2766",
+      "firstName": "qwe",
+      "lastName": "qwe",
+      "weight": "90",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "fe11",
+      "firstName": "qwe",
+      "lastName": "qwe",
+      "weight": "99",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "f63b",
+      "firstName": "qwe",
+      "lastName": "qwe",
+      "weight": "88",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "a477",
+      "firstName": "Choco",
+      "lastName": "late",
+      "weight": "40",
+      "medical_history": [],
+      "prescription": []
     }
   ]
 }
