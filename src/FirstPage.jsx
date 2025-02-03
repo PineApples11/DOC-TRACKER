@@ -14,9 +14,4 @@ const FirstPage = () => {
             </Link>
             <Link to="/register">
                 <button>Register</button>
-            </Link>
-        </div>
-    );
-};
 
-export default FirstPage;
