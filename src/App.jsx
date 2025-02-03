@@ -1,14 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import PatientForm from "./Components/PatientForm";
+
+import React, { useState,useEffect } from 'react'
+import './App.css'
+import PatientForm  from "./Components/PatientForm"
 import Table from "./Components/Table";
-import PatientDetails from "./Components/Pages.jsx/PatientDetails";
-import PatientDetailsForm from "./Components/Pages.jsx/PatientDetailsForm"
-import "./App.css"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Registration from "./Registration";
+import Home from "./Home";
+import Login from "./Login";
+import FirstPage from "./FirstPage"; // Import Landing Page
+import { ToastContainer } from "react-toastify";
+
 
 function App() {
   const [patients, setPatients] = useState([]);
 
+  
   useEffect(() => {
     fetch("http://localhost:3000/newpatients")
       .then((response) => response.json())
@@ -16,19 +22,29 @@ function App() {
       .catch((error) => console.error("Error fetching patients:", error));
   }, []);
 
+  
   const handleSubmit = (newPatient) => {
     setPatients([...patients, newPatient]);
   };
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<><PatientForm onSubmit={handleSubmit} /><Table patients={patients} />   </>} />
-        <Route path="/patientdetails/:id" element={<PatientDetails />} />
-        <Route path="/patientdetailsform/:id" element={<PatientDetailsForm />} />
-      </Routes>
-    </Router>
-  );
+    <>
+    
+            <BrowserRouter>
+                <ToastContainer />
+                <Routes>
+                  <Route path="/" element={<FirstPage />} /> {/* First Page */}
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Registration />} />
+                    <Route path="/home" element={<Home />} /> {/* After Login */}
+                </Routes>
+            </BrowserRouter>
+        
+   <PatientForm onSubmit={handleSubmit}/>
+   <Table newPatient={patients}/>
+  
+    </>
+  )
 }
 
 export default App;

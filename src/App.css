@@ -1,47 +1,91 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for Login & Registration */
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
   text-align: center;
-  
- 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Form Titles */
+.form-container h1 {
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Form Groups */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
 }
 
-.card {
-  padding: 2em;
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-.read-the-docs {
-  color: #888;
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
 }
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Links */
+.link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+.First-page{
+  background-color: #000000; /* Light gray background */
+    text-align: center;
+    padding: 100px;
+}
+.First-page h1 {
+  font-size: 3rem;
+    color: #2c3e50;
+}
+.First-page button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
 
 .patient-form { 
 padding: 20px ;
@@ -110,11 +154,4 @@ th{
 
 th {
   background-color: black;
-}
-
-.details{
-  background-color: #48b1a9;
-  font-size: larger;
-
-}
-
+}}
