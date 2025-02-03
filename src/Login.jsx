@@ -47,7 +47,7 @@ const Login = () => {
                         if (user.password === password) { // comparing entred password with stored password
                             toast.success("Login Successful");
                             sessionStorage.setItem("username", user.name);//storing data in browser temporarily
-                            navigate("/"); // Redirect to Home page
+                            navigate("/PatientForm"); // Redirect to Home page
                         } else {
                             toast.error("Invalid Password");
                         }
