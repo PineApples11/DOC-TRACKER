@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
+ 
 }
 
 .logo {
@@ -67,6 +69,8 @@ left: 0
   margin-top: 20px;
   border-color: #48b1a9;
   transition: background-color 3s ease, transform 0.3s ease;
+  padding: 20px;
+ 
  }
  /* .submit:active{
   background-color: greenyellow;
@@ -93,6 +97,7 @@ table {
 th{
   padding:40px ;
  border-radius: 20px;
+ color: white;
 
 }
  td {
@@ -106,3 +111,10 @@ th{
 th {
   background-color: black;
 }
+
+.details{
+  background-color: #48b1a9;
+  font-size: larger;
+
+}
+

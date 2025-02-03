@@ -1,61 +1,46 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-function Table({ newPatient }) { 
+function Table() {
   const [patients, setPatients] = useState([]);
-  const [loading, setLoading] = useState(true);
-  // function handleViewPatientClick(){
-    useEffect(() => {
-      fetch(`http://localhost:3000/newpatients/${patientId}`) // Replace with your actual API URL
-        .then((response) => response.json())
-        .then((data) => {
-          setPatients(data);
-          setLoading(false);
-        })
-        .catch((error) => {
-          console.error("Error fetching patients:", error);
-          setLoading(false);
-        });
-    }, []);
-  
-    if (loading) {
-      return <h2>Loading...</h2>;
-    }
-  
-  //   const[isView,setIsView]= useState(false)
 
-  // }
+  useEffect(() => {
+    fetch("http://localhost:3000/newpatients")  // Using your API endpoint
+      .then((response) => response.json())
+      .then((data) => setPatients(data))
+      .catch((error) => console.error("Error fetching patients:", error));
+  }, []);
 
   return (
     <div>
-      <table>
+      <h2>Patient List</h2>
+      <table >
         <thead>
           <tr>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Weight</th>
             <th>Action</th>
-            {/* <th>Prescription</th> */}
           </tr>
         </thead>
         <tbody>
-          {newPatient.length === 0 ? (
-            <tr>
-              <td >No patients available</td>
-            </tr>
-          ) : (
-            newPatient.map((row, index) => (
-              <tr key={index}>
+          {patients.length > 0 ? (
+            patients.map((row) => (
+              <tr key={row.id}>
                 <td>{row.firstName}</td>
                 <td>{row.lastName}</td>
                 <td>{row.weight}</td>
-             {/* <td>  <button onClick={handleViewPatientClick}> view patient </button> </td> */}
-             <td>  <button>  <Link to={`/patient/${patient.id}`}>View</Link> </button> </td>
-             
-               {/* <td> <button>view patient </button> </td>  */}
-              
+                <td>
+                  <Link to={`/patientdetails/${row.id}`}>
+                    <button>View</button>
+                  </Link>
+                </td>
               </tr>
             ))
+          ) : (
+            <tr>
+              <td >No patients available</td>
+            </tr>
           )}
         </tbody>
       </table>

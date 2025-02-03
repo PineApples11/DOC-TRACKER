@@ -17,13 +17,39 @@
       "weight": "65"
     }
   ],
-  
   "newpatients": [
     {
-      "id": "39ac",
-      "firstName": "ivy",
-      "lastName": "wanjiru",
-      "weight": "65"
+      "medical_history": {
+        "bloodType": "",
+        "medications": [
+          "bdlk"
+        ],
+        "allergies": [
+          ""
+        ],
+        "chronicIllnesses": [
+          ""
+        ],
+        "majorSurgeries": [
+          ""
+        ],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "jbjka",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          ""
+        ],
+        "doctorsName": "",
+        "hospital": ""
+      },
+      "id": "39ac"
     },
     {
       "id": "03f5",
@@ -84,7 +110,72 @@
       "weight": "75",
       "medical_history": [],
       "prescription": []
+    },
+    {
+      "medical_history": {
+        "bloodType": "",
+        "medications": [
+          ""
+        ],
+        "allergies": [
+          ""
+        ],
+        "chronicIllnesses": [
+          ""
+        ],
+        "majorSurgeries": [
+          ""
+        ],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          ""
+        ],
+        "doctorsName": "",
+        "hospital": ""
+      },
+      "id": "270c"
+    },
+    {
+      "medical_history": {
+        "bloodType": "A",
+        "medications": [
+          "aspirin"
+        ],
+        "allergies": [
+          "smart people"
+        ],
+        "chronicIllnesses": [
+          "dumbness"
+        ],
+        "majorSurgeries": [
+          "brain"
+        ],
+        "healthInsuranceProvider": "none",
+        "nextOfKin": "ivy"
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          ""
+        ],
+        "doctorsName": "",
+        "hospital": ""
+      },
+      "id": "e9f0"
     }
-   
   ]
 }
