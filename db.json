@@ -25,6 +25,11 @@
       "id": "1ce1",
       "name": "Eli",
       "password": "KKK"
+    },
+    {
+      "id": "7a26",
+      "name": "Taylor",
+      "password": "Swift"
     }
   ],
   "newpatients": [
@@ -224,6 +229,14 @@
       "firstName": "Choco",
       "lastName": "late",
       "weight": "40",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "7736",
+      "firstName": "Beyonce",
+      "lastName": "Knowles",
+      "weight": "50",
       "medical_history": [],
       "prescription": []
     }

@@ -5,6 +5,7 @@ import Registration from "./Registration";
 import PatientForm from "./Components/PatientForm";
 import PatientDetails from "./Components/Pages/PatientDetails";
 import Table from "./Components/Table";
+import PatientDetailsForm from "./Components/Pages/PatientDetailsForm";
 import './App.css';
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       <Route path="/patients" element={<PatientDetails />} />
       <Route path="/PatientForm" element={<PatientForm/>} />
       <Route path="/table" element={<Table />} /> 
+      <Route path="/patientdetails/:id" element={<PatientDetails />} />
+      <Route path="/patientdetailsform/:id" element={<PatientDetailsForm />} />
+
     </Routes>
   );
 }

@@ -24,6 +24,7 @@ function PatientDetailsForm() {
     fetch(`http://localhost:3000/newpatients/${id}`)
       .then((response) => response.json())
       .then((data) => {
+        console.log("Fetched Data:", data); // Debugging
         if (data) {
           setFormData({
             bloodType: data.medical_history?.bloodType || "",

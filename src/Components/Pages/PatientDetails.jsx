@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 function PatientDetails() {
   const { id } = useParams();
   const [patient, setPatient] = useState(null);
+  
 
   useEffect(() => {
     fetch(`http://localhost:3000/newpatients/${id}`)
@@ -39,8 +40,8 @@ function PatientDetails() {
       <Link to={`/patientdetailsform/${id}`}>
         <button className='submit'>Edit</button>
       </Link>
-      <Link to="/">
-        <button className='submit'>Back to Patients</button>
+      <Link to="/patients">
+        <button className='submit'>Back to Patients</button> 
       </Link>
     </div>
   );
