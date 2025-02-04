@@ -20,6 +20,11 @@
       "id": "3c37",
       "name": "kiki",
       "password": "123"
+    },
+    {
+      "id": "c3d3",
+      "name": "hakim",
+      "password": "123"
     }
   ],
   "newpatients": [
@@ -109,12 +114,37 @@
       "prescription": []
     },
     {
-      "id": "d984",
-      "firstName": "mal",
-      "lastName": "cyan",
-      "weight": "75",
-      "medical_history": [],
-      "prescription": []
+      "medical_history": {
+        "bloodType": "",
+        "medications": [
+          ""
+        ],
+        "allergies": [
+          ""
+        ],
+        "chronicIllnesses": [
+          ""
+        ],
+        "majorSurgeries": [
+          ""
+        ],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          ""
+        ],
+        "doctorsName": "",
+        "hospital": ""
+      },
+      "id": "d984"
     },
     {
       "medical_history": {
@@ -222,6 +252,39 @@
       "weight": "",
       "medical_history": [],
       "prescription": []
+    },
+    {
+      "medical_history": {
+        "bloodType": "",
+        "medications": [
+          ""
+        ],
+        "allergies": [
+          ""
+        ],
+        "chronicIllnesses": [
+          ""
+        ],
+        "majorSurgeries": [
+          ""
+        ],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          ""
+        ],
+        "doctorsName": "",
+        "hospital": ""
+      },
+      "id": "b63a"
     }
   ]
 }

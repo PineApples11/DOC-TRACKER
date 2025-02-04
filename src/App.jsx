@@ -11,6 +11,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AppointmentForm from "./Components/AppointmentForm"
 import AppointmentTable from "./Components/AppointmentTable"
+import NavBar from "./Components/NavBar";
 
 
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <div>
         <ToastContainer />
+        {/* <NavBar/> */}
 
     <Routes>
       <Route path="/" element={<FirstPage />} />
