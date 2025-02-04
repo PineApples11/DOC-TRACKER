@@ -70,7 +70,29 @@
       "id": "03f5",
       "firstName": "Aidan",
       "lastName": "Marube",
-      "weight": "85"
+      "weight": "85",
+      "medical_history": {
+        "bloodType": "",
+        "medications": [],
+        "allergies": [],
+        "chronicIllnesses": [
+          "Laughing"
+        ],
+        "majorSurgeries": [],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [],
+        "doctorsName": "",
+        "hospital": ""
+      }
     },
     {
       "id": "5803",

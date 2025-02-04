@@ -5,7 +5,6 @@ function PatientDetails() {
   const { id } = useParams();
   const [patient, setPatient] = useState(null);
   
-
   useEffect(() => {
     fetch(`http://localhost:3000/newpatients/${id}`)
       .then((response) => response.json())

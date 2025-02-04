@@ -46,7 +46,7 @@ function PatientDetailsForm() {
         }
       })
       .catch((error) => console.error("Error fetching patient details:", error));
-  }, [id, formData]);//Form data as a dependancy 
+  }, [id]); 
 
   function handleChange(event) {
     setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -76,14 +76,13 @@ function PatientDetailsForm() {
         hospital: formData.hospital,
       },
     };
+    console.log("update data", updatedData);
   
     fetch(`http://localhost:3000/newpatients/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedData),
-    })
+    })  //replaced PUT with PATCH
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to update patient details.");
@@ -120,9 +119,7 @@ function PatientDetailsForm() {
         <input type="text" name="instructions" placeholder="Additional Instructions (comma-separated)" value={formData.instructions} onChange={handleChange} />
         <input type="text" name="doctor" placeholder="Doctor's Name" value={formData.doctor} onChange={handleChange} />
         <input type="text" name="hospital" placeholder="Hospital" value={formData.hospital} onChange={handleChange} />
-        <Link to={`/patientdetails/${id}`}>
         <button type="submit" className="submit">Save Changes</button> {/*link to patientdetails/:id*/}
-        </Link>
       </form>
     </div>
   );
