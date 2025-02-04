@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 
 function PatientDetailsForm() {
   const { id } = useParams();
@@ -24,7 +24,9 @@ function PatientDetailsForm() {
     fetch(`http://localhost:3000/newpatients/${id}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log("Fetched Data:", data); // Debugging
+        console.log("Fetched Data:", data); 
+        console.log("Patient ID:", id);
+                      // Debugging
         if (data) {
           setFormData({
             bloodType: data.medical_history?.bloodType || "",
@@ -44,22 +46,21 @@ function PatientDetailsForm() {
         }
       })
       .catch((error) => console.error("Error fetching patient details:", error));
-  }, [id]);
+  }, [id, formData]);//Form data as a dependancy 
 
   function handleChange(event) {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   }
-
   function handleSubmit(event) {
     event.preventDefault();
-
+  
     const updatedData = {
       medical_history: {
         bloodType: formData.bloodType,
-        medications: formData.medications.split(","),
-        allergies: formData.allergies.split(","),
-        chronicIllnesses: formData.illnesses.split(","),
-        majorSurgeries: formData.surgeries.split(","),
+        medications: formData.medications ? formData.medications.split(",") : [],
+        allergies: formData.allergies ? formData.allergies.split(",") : [],
+        chronicIllnesses: formData.illnesses ? formData.illnesses.split(",") : [],
+        majorSurgeries: formData.surgeries ? formData.surgeries.split(",") : [],
         healthInsuranceProvider: formData.insurance,
         nextOfKin: formData.kin,
       },
@@ -68,14 +69,14 @@ function PatientDetailsForm() {
         diagnosis: formData.diagnosis,
         medicationsPrescribed: {
           dosage: formData.prescriptions,
-          frequency: "N/A", 
+          frequency: "N/A",
         },
-        additionalInstructions: formData.instructions.split(","),
+        additionalInstructions: formData.instructions ? formData.instructions.split(",") : [],
         doctorsName: formData.doctor,
         hospital: formData.hospital,
       },
     };
-
+  
     fetch(`http://localhost:3000/newpatients/${id}`, {
       method: "PUT",
       headers: {
@@ -83,14 +84,23 @@ function PatientDetailsForm() {
       },
       body: JSON.stringify(updatedData),
     })
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to update patient details.");
+        }
+        return response.json();
+      })
       .then(() => {
         alert("Patient details updated successfully!");
         navigate(`/patientdetails/${id}`);
       })
-      .catch((error) => console.error("Error updating patient details:", error));
+      .catch((error) => {
+        console.error("Error updating patient details:", error);
+        alert("Error updating patient details. Please try again.");
+      });
+      setTimeout(() => navigate(`/patientdetails/${id}`), 500);//delay so we dont davigate before state
   }
-
+  
   return (
     <div className="detail-form">
       <h1>Medical Form</h1>
@@ -110,8 +120,9 @@ function PatientDetailsForm() {
         <input type="text" name="instructions" placeholder="Additional Instructions (comma-separated)" value={formData.instructions} onChange={handleChange} />
         <input type="text" name="doctor" placeholder="Doctor's Name" value={formData.doctor} onChange={handleChange} />
         <input type="text" name="hospital" placeholder="Hospital" value={formData.hospital} onChange={handleChange} />
-
-        <button type="submit" className="submit">Save Changes</button>
+        <Link to={`/patientdetails/${id}`}>
+        <button type="submit" className="submit">Save Changes</button> {/*link to patientdetails/:id*/}
+        </Link>
       </form>
     </div>
   );

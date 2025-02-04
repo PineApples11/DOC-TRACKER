@@ -19,7 +19,6 @@ function App() {
       <Route path="/table" element={<Table />} /> 
       <Route path="/patientdetails/:id" element={<PatientDetails />} />
       <Route path="/patientdetailsform/:id" element={<PatientDetailsForm />} />
-
     </Routes>
   );
 }
