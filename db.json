@@ -107,30 +107,36 @@
       "firstName": "Elisha",
       "lastName": "Dominic",
       "weight": "100",
-      "medical_history": [
-        {
-          "Blood Type": " ",
-          "Medications": [],
-          "Allergies": [],
-          "Chronic illnesses ": [],
-          "Major surgeries": [],
-          "Health Insurance Provider": "",
-          "Next Kin": ""
-        }
-      ],
-      "prescription": [
-        {
-          "Date of Prescription": "",
-          "Diagnosis": "",
-          "Medications Prescribed": [
-            "Dosage",
-            "Frequency"
-          ],
-          "Additional Instructions": [],
-          "Doctor's Name": "",
-          "Hospital": ""
-        }
-      ]
+      "medical_history": {
+        "bloodType": "",
+        "medications": [
+          ""
+        ],
+        "allergies": [
+          ""
+        ],
+        "chronicIllnesses": [
+          ""
+        ],
+        "majorSurgeries": [
+          ""
+        ],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          ""
+        ],
+        "doctorsName": "",
+        "hospital": ""
+      }
     },
     {
       "id": "55a4",

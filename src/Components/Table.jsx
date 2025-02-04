@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
-//import { Link } from 'react-router-dom';
-import {useNavigate} from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 function Table() {
   const [patients, setPatients] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("http://localhost:3000/newpatients")  // Using your API endpoint
@@ -13,10 +10,6 @@ function Table() {
       .then((data) => setPatients(data))
       .catch((error) => console.error("Error fetching patients:", error));
   }, []);
-
-  function handleViewDetails(id) {
-    navigate(`/patientdetails/${id}`); // Navigate dynamically
-  }
 
   return (
     <div>
@@ -38,9 +31,9 @@ function Table() {
                 <td>{row.lastName}</td>
                 <td>{row.weight}</td>
                 <td>
-              
-                    <button onClick={() => handleViewDetails(row.id)}>View</button>
-                
+                  <Link to={`/patientdetails/${row.id}`}>
+                    <button>View</button>
+                  </Link>
                 </td>
               </tr>
             ))
