@@ -319,6 +319,64 @@
         "hospital": ""
       },
       "id": "81b7"
+    },
+    {
+      "id": "dd1e",
+      "firstName": "Kendrick",
+      "lastName": "Lamar",
+      "weight": "60",
+      "medical_history": {
+        "bloodType": "A",
+        "medications": [
+          "Painkillers"
+        ],
+        "allergies": [
+          "Proteins"
+        ],
+        "chronicIllnesses": [
+          "Laughing"
+        ],
+        "majorSurgeries": [],
+        "healthInsuranceProvider": "Kenya-Re",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "1/1/2025",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "rest",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [],
+        "doctorsName": "Eli",
+        "hospital": "Nairobi hospital"
+      }
+    },
+    {
+      "id": "2b6d",
+      "firstName": "Cowboy",
+      "lastName": "Carter",
+      "weight": "40",
+      "medical_history": {
+        "bloodType": "",
+        "medications": [],
+        "allergies": [],
+        "chronicIllnesses": [],
+        "majorSurgeries": [],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "not sick",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [],
+        "doctorsName": "",
+        "hospital": ""
+      }
     }
   ]
 }

@@ -90,12 +90,12 @@ function PatientDetailsForm() {
         return response.json();
       })
       .then(() => {
-        alert("Patient details updated successfully!");
+        toast.success("Patient details updated successfully!");
         navigate(`/patientdetails/${id}`);
       })
       .catch((error) => {
         console.error("Error updating patient details:", error);
-        alert("Error updating patient details. Please try again.");
+        toast.error("Error updating patient details. Please try again.");
       });
       setTimeout(() => navigate(`/patientdetails/${id}`), 500);//delay so we dont davigate before state
   }

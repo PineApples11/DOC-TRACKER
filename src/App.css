@@ -154,4 +154,78 @@ th{
 
 th {
   background-color: black;
-}}
+}
+.patient-form { 
+  padding: 20px ;
+  max-width: 600px;
+  border-radius: 30px;
+  border: 1px solid white;
+  color: #48b1a9;
+  position: relative;
+  left: 0
+  
+  
+  
+  ;
+  }
+   .patient-form form {
+     display: flex;
+     flex-direction: column;
+     padding: 6px;
+   }
+  
+   .submit{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 30px;
+    margin-top: 20px;
+    border-color: #48b1a9;
+    transition: background-color 3s ease, transform 0.3s ease;
+    padding: 20px;
+   
+   }
+   /* .submit:active{
+    background-color: greenyellow;
+    transform: scale(0.98);
+   } */
+  
+   .submit:hover{
+    cursor: pointer;
+    background-color: #48b1a9;
+   }
+  
+   input {
+    margin: 20px;
+    padding: 30px;
+    border-radius: 25px;
+    border-color: #48b1a9;
+  }
+  table {
+    width: 130%;
+    margin: 40px auto;
+    border-collapse:inherit;
+    padding: 10px;
+  }
+  th{
+    padding:40px ;
+   border-radius: 20px;
+   color: white;
+  
+  }
+   td {
+    padding: 20px;
+    text-align: left;
+    border-radius: 25px;
+    background-color: #48b1a9;
+    vertical-align: text-top;
+  }
+  
+  th {
+    background-color: black;
+  }
+  
+  .details{
+    background-color: #48b1a9;
+    font-size: larger;
+  
+  }}

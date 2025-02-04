@@ -14,9 +14,10 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <>
+    <div>
+        <ToastContainer />
+
     <Routes>
-    <ToastContainer />
       <Route path="/" element={<FirstPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration/>} /> 
@@ -26,7 +27,7 @@ function App() {
       <Route path="/patientdetails/:id" element={<PatientDetails />} />
       <Route path="/patientdetailsform/:id" element={<PatientDetailsForm />} />
     </Routes>
-    </>
+    </div>
   );
 }
 
