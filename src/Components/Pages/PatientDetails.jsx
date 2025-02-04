@@ -23,13 +23,7 @@ function PatientDetails() {
       <p><strong>Last Name:</strong> {patient.lastName}</p>
       <p><strong>Weight:</strong> {patient.weight} kg</p>
 
-<<<<<<< HEAD:src/Components/Pages.jsx/PatientDetails.jsx
-      <h3>Medical History</h3>
-      {/* <p> None</p> */}
-      <p><strong>Blood Type:</strong> {patient.medical_history?.bloodType || "N/A"}</p>
-=======
-      {/* <p><strong>Blood Type:</strong> {patient.medical_history?.bloodType || "N/A"}</p>
->>>>>>> origin/main:src/Components/Pages/PatientDetails.jsx
+       <p><strong>Blood Type:</strong> {patient.medical_history?.bloodType || "N/A"}</p>
       <p><strong>Medications:</strong> {patient.medical_history?.medications?.join(", ") || "None"}</p>
       <p><strong>Allergies:</strong> {patient.medical_history?.allergies?.join(", ") || "None"}</p>
       <p><strong>Chronic Illnesses:</strong> {patient.medical_history?.chronicIllnesses?.join(", ") || "None"}</p>
