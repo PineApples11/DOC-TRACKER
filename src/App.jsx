@@ -7,10 +7,16 @@ import PatientDetails from "./Components/Pages/PatientDetails";
 import Table from "./Components/Table";
 import PatientDetailsForm from "./Components/Pages/PatientDetailsForm";
 import './App.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+
 
 function App() {
   return (
+    <>
     <Routes>
+    <ToastContainer />
       <Route path="/" element={<FirstPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration/>} /> 
@@ -20,6 +26,7 @@ function App() {
       <Route path="/patientdetails/:id" element={<PatientDetails />} />
       <Route path="/patientdetailsform/:id" element={<PatientDetailsForm />} />
     </Routes>
+    </>
   );
 }
 

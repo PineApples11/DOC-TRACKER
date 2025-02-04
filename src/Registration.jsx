@@ -10,23 +10,24 @@ const Registration = () => {
    const navigate = useNavigate();
 
    const isValidate = () => {
-        let isProceed = true;
-        let errormessage = " Please Entre : ";
-        let missingFields = [];
+    let isProceed = true;
+    let errormessage = "Please Enter: ";
+    let missingFields = [];
 
-        if(name === ""){
-            isProceed = false;
-            errormessage += 'name';
-
-        }
-        if (password === ""){
-            isProceed = false;
-            errormessage += 'password';
-        }
-        if (!isProceed){
-              toast.warning(errormessage + missingFields.join(" ,"));  
-        }         return isProceed;
+    if(name === ""){
+        isProceed = false;
+        missingFields.push('Name');
     }
+    if (password === ""){
+        isProceed = false;
+        missingFields.push('Password');
+    }
+    if (!isProceed){
+        toast.warning(errormessage + missingFields.join(", "));  
+    }         
+    return isProceed;
+};
+
     const handleSubmit = (e) => {e.preventDefault();
     if(!isValidate()) return;
         let stateData = {name,password};//declairing an object 
