@@ -17,24 +17,19 @@
       "weight": "65"
     },
     {
-      "id": "1332",
-      "name": "iv",
-      "password": "123"
+      "id": "d6f4",
+      "name": "Elisha",
+      "password": "KK"
     },
     {
-      "id": "b2f1",
-      "name": "che",
-      "password": "123"
+      "id": "1ce1",
+      "name": "Eli",
+      "password": "KKK"
     },
     {
-      "id": "5f2c",
-      "name": "123",
-      "password": "123"
-    },
-    {
-      "id": "a6f2",
-      "name": "she",
-      "password": "123"
+      "id": "7a26",
+      "name": "Taylor",
+      "password": "Swift"
     }
   ],
   "newpatients": [
@@ -75,7 +70,29 @@
       "id": "03f5",
       "firstName": "Aidan",
       "lastName": "Marube",
-      "weight": "85"
+      "weight": "85",
+      "medical_history": {
+        "bloodType": "",
+        "medications": [],
+        "allergies": [],
+        "chronicIllnesses": [
+          "Laughing"
+        ],
+        "majorSurgeries": [],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [],
+        "doctorsName": "",
+        "hospital": ""
+      }
     },
     {
       "id": "5803",
@@ -204,72 +221,167 @@
       "id": "e9f0"
     },
     {
-      "medical_history": {
-        "bloodType": "A",
-        "medications": [
-          "aspirin"
-        ],
-        "allergies": [
-          "SHIO"
-        ],
-        "chronicIllnesses": [
-          "gfu"
-        ],
-        "majorSurgeries": [
-          "hioH"
-        ],
-        "healthInsuranceProvider": "hi",
-        "nextOfKin": "jk"
-      },
-      "prescription": {
-        "dateOfPrescription": "jo",
-        "diagnosis": "sbduh",
-        "medicationsPrescribed": {
-          "dosage": "GDSUIJ",
-          "frequency": "N/A"
-        },
-        "additionalInstructions": [
-          "bikj"
-        ],
-        "doctorsName": "jvhkj",
-        "hospital": "cuhj"
-      },
-      "id": "a435"
+      "id": "389c",
+      "firstName": "Samaki",
+      "lastName": "Mkubwa",
+      "weight": "80",
+      "medical_history": [],
+      "prescription": []
     },
     {
-      "id": "92f2",
-      "firstName": "suzanna",
-      "lastName": "kiyotaka",
-      "weight": "65",
+      "id": "2766",
+      "firstName": "qwe",
+      "lastName": "qwe",
+      "weight": "90",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "fe11",
+      "firstName": "qwe",
+      "lastName": "qwe",
+      "weight": "99",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "f63b",
+      "firstName": "qwe",
+      "lastName": "qwe",
+      "weight": "88",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "a477",
+      "firstName": "Choco",
+      "lastName": "late",
+      "weight": "40",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
+      "id": "7736",
+      "firstName": "Beyonce",
+      "lastName": "Knowles",
+      "weight": "50",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
       "medical_history": {
-        "bloodType": "A",
+        "bloodType": "",
         "medications": [
-          "aspirin"
+          ""
         ],
         "allergies": [
-          "proteins"
+          ""
         ],
         "chronicIllnesses": [
-          "cancer"
+          ""
         ],
         "majorSurgeries": [
-          "none"
+          ""
         ],
-        "healthInsuranceProvider": "none",
-        "nextOfKin": "ivy"
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
       },
       "prescription": {
-        "dateOfPrescription": "12/12/2020",
-        "diagnosis": "Ulcers",
+        "dateOfPrescription": "",
+        "diagnosis": "",
         "medicationsPrescribed": {
-          "dosage": "aspirin",
+          "dosage": "",
           "frequency": "N/A"
         },
         "additionalInstructions": [
-          "duiakfdoi"
+          ""
         ],
-        "doctorsName": "Ivy",
-        "hospital": "nairobi women's"
+        "doctorsName": "",
+        "hospital": ""
+      },
+      "id": "3206"
+    },
+    {
+      "medical_history": {
+        "bloodType": "A",
+        "medications": [],
+        "allergies": [],
+        "chronicIllnesses": [],
+        "majorSurgeries": [],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "4/2/2025",
+        "diagnosis": "not sick",
+        "medicationsPrescribed": {
+          "dosage": "rest",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          "Drink soup"
+        ],
+        "doctorsName": "Eli",
+        "hospital": ""
+      },
+      "id": "81b7"
+    },
+    {
+      "id": "dd1e",
+      "firstName": "Kendrick",
+      "lastName": "Lamar",
+      "weight": "60",
+      "medical_history": {
+        "bloodType": "A",
+        "medications": [
+          "Painkillers"
+        ],
+        "allergies": [
+          "Proteins"
+        ],
+        "chronicIllnesses": [
+          "Laughing"
+        ],
+        "majorSurgeries": [],
+        "healthInsuranceProvider": "Kenya-Re",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "1/1/2025",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "rest",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [],
+        "doctorsName": "Eli",
+        "hospital": "Nairobi hospital"
+      }
+    },
+    {
+      "id": "2b6d",
+      "firstName": "Cowboy",
+      "lastName": "Carter",
+      "weight": "40",
+      "medical_history": {
+        "bloodType": "",
+        "medications": [],
+        "allergies": [],
+        "chronicIllnesses": [],
+        "majorSurgeries": [],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "not sick",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [],
+        "doctorsName": "",
+        "hospital": ""
       }
     }
   ]
