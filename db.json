@@ -17,19 +17,14 @@
       "weight": "65"
     },
     {
-      "id": "d6f4",
-      "name": "Elisha",
-      "password": "KK"
+      "id": "3c37",
+      "name": "kiki",
+      "password": "123"
     },
     {
-      "id": "1ce1",
-      "name": "Eli",
-      "password": "KKK"
-    },
-    {
-      "id": "7a26",
-      "name": "Taylor",
-      "password": "Swift"
+      "id": "c3d3",
+      "name": "hakim",
+      "password": "123"
     }
   ],
   "newpatients": [
@@ -70,29 +65,7 @@
       "id": "03f5",
       "firstName": "Aidan",
       "lastName": "Marube",
-      "weight": "85",
-      "medical_history": {
-        "bloodType": "",
-        "medications": [],
-        "allergies": [],
-        "chronicIllnesses": [
-          "Laughing"
-        ],
-        "majorSurgeries": [],
-        "healthInsuranceProvider": "",
-        "nextOfKin": ""
-      },
-      "prescription": {
-        "dateOfPrescription": "",
-        "diagnosis": "",
-        "medicationsPrescribed": {
-          "dosage": "",
-          "frequency": "N/A"
-        },
-        "additionalInstructions": [],
-        "doctorsName": "",
-        "hospital": ""
-      }
+      "weight": "85"
     },
     {
       "id": "5803",
@@ -107,6 +80,40 @@
       "firstName": "Elisha",
       "lastName": "Dominic",
       "weight": "100",
+      "medical_history": [
+        {
+          "Blood Type": " ",
+          "Medications": [],
+          "Allergies": [],
+          "Chronic illnesses ": [],
+          "Major surgeries": [],
+          "Health Insurance Provider": "",
+          "Next Kin": ""
+        }
+      ],
+      "prescription": [
+        {
+          "Date of Prescription": "",
+          "Diagnosis": "",
+          "Medications Prescribed": [
+            "Dosage",
+            "Frequency"
+          ],
+          "Additional Instructions": [],
+          "Doctor's Name": "",
+          "Hospital": ""
+        }
+      ]
+    },
+    {
+      "id": "55a4",
+      "firstName": "devy",
+      "lastName": "Jamal",
+      "weight": "25",
+      "medical_history": [],
+      "prescription": []
+    },
+    {
       "medical_history": {
         "bloodType": "",
         "medications": [
@@ -136,23 +143,8 @@
         ],
         "doctorsName": "",
         "hospital": ""
-      }
-    },
-    {
-      "id": "55a4",
-      "firstName": "devy",
-      "lastName": "Jamal",
-      "weight": "25",
-      "medical_history": [],
-      "prescription": []
-    },
-    {
-      "id": "d984",
-      "firstName": "mal",
-      "lastName": "cyan",
-      "weight": "75",
-      "medical_history": [],
-      "prescription": []
+      },
+      "id": "d984"
     },
     {
       "medical_history": {
@@ -221,50 +213,43 @@
       "id": "e9f0"
     },
     {
-      "id": "389c",
-      "firstName": "Samaki",
-      "lastName": "Mkubwa",
-      "weight": "80",
-      "medical_history": [],
-      "prescription": []
+      "medical_history": {
+        "bloodType": "A",
+        "medications": [
+          "aspirin"
+        ],
+        "allergies": [
+          "SHIO"
+        ],
+        "chronicIllnesses": [
+          "ZUD"
+        ],
+        "majorSurgeries": [
+          "bh"
+        ],
+        "healthInsuranceProvider": "none",
+        "nextOfKin": "ivy"
+      },
+      "prescription": {
+        "dateOfPrescription": "12/12/2020",
+        "diagnosis": "sbduh",
+        "medicationsPrescribed": {
+          "dosage": "XNIVHSF",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          "bikj"
+        ],
+        "doctorsName": "Ivy",
+        "hospital": "nairobi women's"
+      },
+      "id": "8787"
     },
     {
-      "id": "2766",
-      "firstName": "qwe",
-      "lastName": "qwe",
-      "weight": "90",
-      "medical_history": [],
-      "prescription": []
-    },
-    {
-      "id": "fe11",
-      "firstName": "qwe",
-      "lastName": "qwe",
-      "weight": "99",
-      "medical_history": [],
-      "prescription": []
-    },
-    {
-      "id": "f63b",
-      "firstName": "qwe",
-      "lastName": "qwe",
-      "weight": "88",
-      "medical_history": [],
-      "prescription": []
-    },
-    {
-      "id": "a477",
-      "firstName": "Choco",
-      "lastName": "late",
-      "weight": "40",
-      "medical_history": [],
-      "prescription": []
-    },
-    {
-      "id": "7736",
-      "firstName": "Beyonce",
-      "lastName": "Knowles",
-      "weight": "50",
+      "id": "946d",
+      "firstName": "",
+      "lastName": "",
+      "weight": "",
       "medical_history": [],
       "prescription": []
     },
@@ -299,90 +284,7 @@
         "doctorsName": "",
         "hospital": ""
       },
-      "id": "3206"
-    },
-    {
-      "medical_history": {
-        "bloodType": "A",
-        "medications": [],
-        "allergies": [],
-        "chronicIllnesses": [],
-        "majorSurgeries": [],
-        "healthInsuranceProvider": "",
-        "nextOfKin": ""
-      },
-      "prescription": {
-        "dateOfPrescription": "4/2/2025",
-        "diagnosis": "not sick",
-        "medicationsPrescribed": {
-          "dosage": "rest",
-          "frequency": "N/A"
-        },
-        "additionalInstructions": [
-          "Drink soup"
-        ],
-        "doctorsName": "Eli",
-        "hospital": ""
-      },
-      "id": "81b7"
-    },
-    {
-      "id": "dd1e",
-      "firstName": "Kendrick",
-      "lastName": "Lamar",
-      "weight": "60",
-      "medical_history": {
-        "bloodType": "A",
-        "medications": [
-          "Painkillers"
-        ],
-        "allergies": [
-          "Proteins"
-        ],
-        "chronicIllnesses": [
-          "Laughing"
-        ],
-        "majorSurgeries": [],
-        "healthInsuranceProvider": "Kenya-Re",
-        "nextOfKin": ""
-      },
-      "prescription": {
-        "dateOfPrescription": "1/1/2025",
-        "diagnosis": "",
-        "medicationsPrescribed": {
-          "dosage": "rest",
-          "frequency": "N/A"
-        },
-        "additionalInstructions": [],
-        "doctorsName": "Eli",
-        "hospital": "Nairobi hospital"
-      }
-    },
-    {
-      "id": "2b6d",
-      "firstName": "Cowboy",
-      "lastName": "Carter",
-      "weight": "40",
-      "medical_history": {
-        "bloodType": "",
-        "medications": [],
-        "allergies": [],
-        "chronicIllnesses": [],
-        "majorSurgeries": [],
-        "healthInsuranceProvider": "",
-        "nextOfKin": ""
-      },
-      "prescription": {
-        "dateOfPrescription": "",
-        "diagnosis": "not sick",
-        "medicationsPrescribed": {
-          "dosage": "",
-          "frequency": "N/A"
-        },
-        "additionalInstructions": [],
-        "doctorsName": "",
-        "hospital": ""
-      }
+      "id": "b63a"
     }
   ]
 }
