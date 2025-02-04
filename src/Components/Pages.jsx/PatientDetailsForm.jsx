@@ -76,7 +76,7 @@ function PatientDetailsForm() {
     };
 
     fetch(`http://localhost:3000/newpatients/${id}`, {
-      method: "PUT",
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },

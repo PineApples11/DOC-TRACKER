@@ -15,6 +15,26 @@
       "firstName": "ivy",
       "lastName": "wanjiru",
       "weight": "65"
+    },
+    {
+      "id": "1332",
+      "name": "iv",
+      "password": "123"
+    },
+    {
+      "id": "b2f1",
+      "name": "che",
+      "password": "123"
+    },
+    {
+      "id": "5f2c",
+      "name": "123",
+      "password": "123"
+    },
+    {
+      "id": "a6f2",
+      "name": "she",
+      "password": "123"
     }
   ],
   "newpatients": [
@@ -70,30 +90,36 @@
       "firstName": "Elisha",
       "lastName": "Dominic",
       "weight": "100",
-      "medical_history": [
-        {
-          "Blood Type": " ",
-          "Medications": [],
-          "Allergies": [],
-          "Chronic illnesses ": [],
-          "Major surgeries": [],
-          "Health Insurance Provider": "",
-          "Next Kin": ""
-        }
-      ],
-      "prescription": [
-        {
-          "Date of Prescription": "",
-          "Diagnosis": "",
-          "Medications Prescribed": [
-            "Dosage",
-            "Frequency"
-          ],
-          "Additional Instructions": [],
-          "Doctor's Name": "",
-          "Hospital": ""
-        }
-      ]
+      "medical_history": {
+        "bloodType": "",
+        "medications": [
+          ""
+        ],
+        "allergies": [
+          ""
+        ],
+        "chronicIllnesses": [
+          ""
+        ],
+        "majorSurgeries": [
+          ""
+        ],
+        "healthInsuranceProvider": "",
+        "nextOfKin": ""
+      },
+      "prescription": {
+        "dateOfPrescription": "",
+        "diagnosis": "",
+        "medicationsPrescribed": {
+          "dosage": "",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          ""
+        ],
+        "doctorsName": "",
+        "hospital": ""
+      }
     },
     {
       "id": "55a4",
@@ -176,6 +202,75 @@
         "hospital": ""
       },
       "id": "e9f0"
+    },
+    {
+      "medical_history": {
+        "bloodType": "A",
+        "medications": [
+          "aspirin"
+        ],
+        "allergies": [
+          "SHIO"
+        ],
+        "chronicIllnesses": [
+          "gfu"
+        ],
+        "majorSurgeries": [
+          "hioH"
+        ],
+        "healthInsuranceProvider": "hi",
+        "nextOfKin": "jk"
+      },
+      "prescription": {
+        "dateOfPrescription": "jo",
+        "diagnosis": "sbduh",
+        "medicationsPrescribed": {
+          "dosage": "GDSUIJ",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          "bikj"
+        ],
+        "doctorsName": "jvhkj",
+        "hospital": "cuhj"
+      },
+      "id": "a435"
+    },
+    {
+      "id": "92f2",
+      "firstName": "suzanna",
+      "lastName": "kiyotaka",
+      "weight": "65",
+      "medical_history": {
+        "bloodType": "A",
+        "medications": [
+          "aspirin"
+        ],
+        "allergies": [
+          "proteins"
+        ],
+        "chronicIllnesses": [
+          "cancer"
+        ],
+        "majorSurgeries": [
+          "none"
+        ],
+        "healthInsuranceProvider": "none",
+        "nextOfKin": "ivy"
+      },
+      "prescription": {
+        "dateOfPrescription": "12/12/2020",
+        "diagnosis": "Ulcers",
+        "medicationsPrescribed": {
+          "dosage": "aspirin",
+          "frequency": "N/A"
+        },
+        "additionalInstructions": [
+          "duiakfdoi"
+        ],
+        "doctorsName": "Ivy",
+        "hospital": "nairobi women's"
+      }
     }
   ]
 }
