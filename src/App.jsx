@@ -20,6 +20,7 @@ function App() {
     <div>
         <ToastContainer />
         {/* <NavBar/> */}
+        <NavBar/>
 
     <Routes>
       <Route path="/" element={<FirstPage />} />
